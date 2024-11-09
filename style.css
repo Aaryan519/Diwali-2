@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100vh;
+}
+
+.fireworks {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    background: url(../../../ff.jpg);
+    z-index: 1;
+}
+
+.fireworks h1 {
+    font-size: 120px;
+    text-align: center;
+    color: #fff;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #6bf4e2, 0 0 10px #f46bdc, 0 0 15px #8bf46b, 0 0 20px #fef744, 0 0 25px #fea044, 0 0 30px #ff5d78, 0 0 35px #444;
+    }
+    to {
+        text-shadow: 0 0 10px #6bf4e2, 0 0 20px #6bf4e2, 0 0 30px #8bf46b, 0 0 40px #fef744, 0 0 50px #fea044, 0 0 60px #ff5d78, 0 0 70px #444;
+    }
+}
